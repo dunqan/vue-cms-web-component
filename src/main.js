@@ -1,8 +1,7 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import wrap from '@vue/web-component-wrapper';
+import VueSearchBox from './components/VueSearchBox';
 
-Vue.config.productionTip = false
+const VueSearchBoxCustomElement = wrap(Vue, VueSearchBox);
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+window.customElements.define('vue-search-box', VueSearchBoxCustomElement);

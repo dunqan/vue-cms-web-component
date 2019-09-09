@@ -1,29 +1,35 @@
-# vue-web-component-project
+# Vue based CMS web component for Spartacus
 
-## Project setup
-```
-yarn install
-```
+## What is Spartacus?
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+Spartacus is a lean, Angular-based JavaScript storefront for SAP Commerce Cloud that communicates exclusively through the Commerce REST API.
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+https://github.com/SAP/cloud-commerce-spartacus-storefront
 
-### Run your tests
-```
-yarn run test
-```
+## What are cms components in Spartacus?
 
-### Lints and fixes files
-```
-yarn run lint
-```
+https://sap.github.io/cloud-commerce-spartacus-storefront-docs/customizing-cms-components/
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Build steps
+
+`yarm && yarn buid`
+
+## About the examples
+
+Build will result in `vue-search-box.min.js`.
+    
+## Usage in spartacus
+
+1. Copy `vue-search-box.min.js` file to assets folder in your shell app
+
+2. Use cms component configuration to use those new components:
+    
+    ```typescript
+    {
+      cmsComponents: {
+        SearchBoxComponent: {
+          component: 'assets/vue-search-box.min.js#vue-search-box'
+        },
+      }
+    }
+    ```
