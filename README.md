@@ -22,7 +22,13 @@ Build will result in `vue-search-box.min.js`.
 
 1. Copy `vue-search-box.min.js` file to assets folder in your shell app
 
-2. Use cms component configuration to use those new components:
+2. Add vue.js to `index.html`
+
+  ```html
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10"></script>
+  ```
+
+3. Use cms component configuration to use those new components:
     
     ```typescript
     {
