@@ -14,7 +14,7 @@ https://sap.github.io/cloud-commerce-spartacus-storefront-docs/customizing-cms-c
 
 `yarm && yarn buid`
 
-## About the examples
+## About the example
 
 Build will result in `vue-search-box.min.js`.
     
@@ -28,7 +28,7 @@ Build will result in `vue-search-box.min.js`.
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10"></script>
   ```
 
-3. Use cms component configuration to use those new components:
+3. Use cms component configuration to replace default search box:
     
     ```typescript
     {
